@@ -1,0 +1,23 @@
+<p>
+  user-list works!
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>name</th>
+      <th>Card Type</th>
+      <th>Card Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users"  
+    (click)="navigateToUser(user.id)">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.cardType}}</td>
+      <td>{{user.cardNumber}}</td>
+    </tr>
+  </tbody>
+</table>
